@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'books',
     'rest_framework',
+
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -50,6 +51,8 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'books.books.ShortCircuitMiddleware',
+
    # 'books.books.GetAllBooks',
 ]
 
