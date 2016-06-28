@@ -1,0 +1,17 @@
+<html>
+<head>
+ <title>Django: Creating a Custom Middleware Component</title>
+</head>
+<body>
+ <h2>Django: Creating a Custom Middleware Component</h2>
+<p><strong>Creating a custom Middleware to show all books</strong></p>
+<ol>
+{% if app_books|length%}
+{% for b in app_books %}
+ <li>{{b.title}}</li>
+{% endfor %}
+{% endif %}
+</ol>
+<p><a href='/?app_id=1'>Click here to see how it works</a></p>
+</body>
+</html>
